@@ -9,7 +9,7 @@ type NumberResponse struct {
 }
 
 type VerifyCodeRequest struct {
-	Session string `json:"session"`
+	Session string `json:"sessionId"`
 	Code    string `json:"code"`
 }
 
