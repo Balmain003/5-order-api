@@ -1,7 +1,7 @@
 package auth
 
 type NumberRequest struct {
-	Number string `json:"phone"`
+	Phone string `json:"phone"`
 }
 type NumberResponse struct {
 	Session string `json:"sessionId"`
