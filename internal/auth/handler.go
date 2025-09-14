@@ -83,7 +83,7 @@ func (h *LoginHandler) VerifyCode(w http.ResponseWriter, r *http.Request) {
 	}, 200)
 }
 
-func (h *LoginHandler) ProfileHandler(w http.ResponseWriter, r *http.Request) {
+func (h *LoginHandler) OrderHandler(w http.ResponseWriter, r *http.Request) {
 	phone, _ := r.Context().Value(middleware.PhoneContextKey).(string)
 	fmt.Fprintln(w, "Phone from ctxu", phone)
 
